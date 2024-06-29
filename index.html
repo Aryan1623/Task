@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navbar and Section</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-left">
+            <i class="fa-brands fa-figma"></i>
+            <div class="dropdown">
+                <i class="fas fa-caret-down dropdown-icon"></i>
+            </div>
+            <div class="hand-icon-container">
+                <i class="fa-regular fa-hand"></i>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <span class="navbar-title">Groups-copy(Copy)</span>
+        </div>
+        <div class="navbar-right">
+            <button class="login-button">Login</button>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+            <div class="zoom-dropdown">
+                <span class="zoom-text">100%</span>
+                <i class="fas fa-caret-down dropdown-icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+            <div class="section-header">
+                <i class="fas fa-search search-icon"></i>
+                <span class="section-title">Title</span>
+                <i class="fas fa-caret-down dropdown-icon"></i>
+            </div>
+            <div class="section-content">
+                <!-- Add multiple rows with sub-rows -->
+                <div class="row">
+                    <div class="row-header">
+                        <span>Row1</span>
+                        <i class="fas fa-caret-down dropdown-icon row-dropdown"></i>
+                    </div>
+                    <div class="sub-row">Sub Row1.1</div>
+                    <div class="sub-row">Sub Row1.2</div>
+                    <div class="sub-row">Sub Row1.3</div>
+                </div>
+                <div class="row">
+                    <div class="row-header">
+                        <span>Row2</span>
+                        <i class="fas fa-caret-down dropdown-icon row-dropdown"></i>
+                    </div>
+                    <div class="sub-row">Sub Row2.1</div>
+                    <div class="sub-row">Sub Row2.2</div>
+                    <div class="sub-row">Sub Row2.3</div>
+                </div>
+                <div class="row">
+                    <div class="row-header">
+                        <span>Row3</span>
+                        <i class="fas fa-caret-down dropdown-icon row-dropdown"></i>
+                    </div>
+                    <div class="sub-row">Sub Row3.1</div>
+                    <div class="sub-row">Sub Row3.2</div>
+                    <div class="sub-row">Sub Row3.3</div>
+                </div>
+                <div class="row">
+                    <div class="row-header">
+                        <span>Row4</span>
+                        <i class="fas fa-caret-down dropdown-icon row-dropdown"></i>
+                    </div>
+                    <div class="sub-row">Sub Row4.1</div>
+                    <div class="sub-row">Sub Row4.2</div>
+                    <div class="sub-row">Sub Row4.3</div>
+                </div>
+                <!-- Add more rows and sub-rows as needed -->
+                <!-- Repeat the above block for more rows -->
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Find...">
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-times close-icon"></i>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="main-row" id="row1">
+                <div class="sub-row1">sub-row 1</div>
+                <div class="sub-row1">sub-row 2</div>
+                <div class="sub-row1">sub-row 3</div>
+            </div>
+            <div class="main-row" id="row2">
+                <div class="sub-row1">sub-row 1</div>
+                <div class="sub-row1">sub-row 2</div>
+                <div class="sub-row1">sub-row 3</div>
+            </div>
+            <div class="main-row" id="row3">
+                <div class="sub-row1">sub-row 1</div>
+                <div class="sub-row1">sub-row 2</div>
+                <div class="sub-row1">sub-row 3</div>
+            </div>
+            <div class="main-row" id="row4">
+                <div class="sub-row1">sub-row 1</div>
+                <div class="sub-row1">sub-row 2</div>
+                <div class="sub-row1">sub-row 3</div>
+            </div>
+            <!-- Add more main rows as needed -->
+        </div>
+    </div>
+
+    <div class="login-box" id="login-box">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p class="switch-box">Don't have an account? <span id="show-signup">Sign up</span></p>
+        </form>
+    </div>
+
+    <div class="signup-box" id="signup-box">
+        <h2>Sign Up</h2>
+        <form>
+            <div class="form-group">
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username" required>
+            </div>
+            <div class="form-group">
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit">Sign Up</button>
+            <p class="switch-box">Already have an account? <span id="show-login">Login</span></p>
+        </form>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
+
+
+
+
